@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,7 +5,6 @@ import Image from "next/image";
 //images
 import logoHorizontal from "@/assets/logo-horizontal-yellow.svg";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { openWhatsApp } from "@/utils/openWhatsApp";
 import { SOCIAL_MEDIA } from "@/constants/social-media";
 
 const footerLinks = [
@@ -24,7 +21,12 @@ const Footer = () => {
         <div className="py-12 flex flex-col sm:flex-row items-start justify-between gap-x-8 gap-y-10 px-6 xl:px-0">
           <div>
             {/* Logo */}
-            <Image src={logoHorizontal} alt="Lune Escola de Dança - Logo horizontal da escola de dança" width={200} height={200} />
+            <Image
+              src={logoHorizontal}
+              alt="Lune Escola de Dança - Logo horizontal da escola de dança"
+              width={200}
+              height={200}
+            />
 
             {/* <ul className="mt-6 flex items-center gap-4 flex-wrap">
               {footerLinks.map(({ title, href }) => (
@@ -61,7 +63,10 @@ const Footer = () => {
             >
               <FaWhatsapp className="h-6 w-6" />
             </Link>
-            <Link href={`https://www.facebook.com/${SOCIAL_MEDIA.FACEBOOK}`} target="_blank">
+            <Link
+              href={`https://www.facebook.com/${SOCIAL_MEDIA.FACEBOOK}`}
+              target="_blank"
+            >
               <FaFacebook className="h-6 w-6" />
             </Link>
           </div>
