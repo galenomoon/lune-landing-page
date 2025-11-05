@@ -62,7 +62,7 @@ export default function SectionModalities() {
 
           <AnimateImage
             src={modality.image}
-            alt={modality.title}
+            alt={`Aulas de ${modality.title} na Lune Escola de Dança - ${modality.description}`}
             className="scale-150 object-cover pt-[100px] z-10 group-hover:scale-160 transition-all duration-300"
             width={1000}
             height={1000}

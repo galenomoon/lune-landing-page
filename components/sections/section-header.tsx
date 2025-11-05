@@ -41,7 +41,7 @@ export default function SectionHeader() {
       <AnimateImage
         delay={0.9}
         src={logoIcon}
-        alt="Logo Icon Purple"
+        alt="Lune Escola de Dança - Logo oficial da escola de dança especializada em Ballet, Hip Hop, Jazz-Funk e K-pop"
         width={1000}
         height={1000}
         className="absolute -right-44 bottom-0 h-auto max-h-[60dvh] md:max-h-[110dvh] object-contain z-0"

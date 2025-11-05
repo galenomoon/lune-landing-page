@@ -1,0 +1,5 @@
+export const SOCIAL_MEDIA = {
+  INSTAGRAM: "lunedanca",
+  WHATSAPP: "+5511953979723",
+  FACEBOOK: "61581629487856",
+};
