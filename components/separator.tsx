@@ -49,19 +49,19 @@ export default function Separator({
 
   useAnimationFrame((t, delta) => {
     const currentVelocity = velocityFactor.get();
-    
+
     // Suaviza a mudança de direção usando um threshold
     if (currentVelocity < -0.1 && lastVelocity.current >= -0.1) {
       directionFactor.current = -1;
     } else if (currentVelocity > 0.1 && lastVelocity.current <= 0.1) {
       directionFactor.current = 1;
     }
-    
+
     lastVelocity.current = currentVelocity;
 
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
     moveBy += directionFactor.current * moveBy * currentVelocity;
-    
+
     baseX.set(baseX.get() + moveBy);
   });
 
@@ -81,8 +81,8 @@ export default function Separator({
         style={{ x }}
       >
         {words.map((word, index) => (
-          <div key={`0-${index}`} className="flex items-center gap-8">
-            <p className="text-6xl font-black uppercase tracking-tight">
+          <div key={`0-${index}`} className="flex items-center gap-8 shrink-0">
+            <p className="md:text-6xl text-4xl font-black uppercase tracking-tight">
               {word}
             </p>
             {index % 2 === 0 ? (
@@ -95,7 +95,9 @@ export default function Separator({
               />
             ) : (
               <Image
-                src={color === "primary" ? iconSparklesLight : iconSparklesPurple}
+                src={
+                  color === "primary" ? iconSparklesLight : iconSparklesPurple
+                }
                 alt="Sparkles"
                 width={100}
                 height={100}
@@ -105,8 +107,8 @@ export default function Separator({
           </div>
         ))}
         {words.map((word, index) => (
-          <div key={`1-${index}`} className="flex items-center gap-8">
-            <p className="text-6xl font-black uppercase tracking-tight">
+          <div key={`1-${index}`} className="flex items-center gap-8 shrink-0">
+            <p className="md:text-6xl text-4xl font-black uppercase tracking-tight">
               {word}
             </p>
             {index % 2 === 0 ? (
@@ -119,7 +121,9 @@ export default function Separator({
               />
             ) : (
               <Image
-                src={color === "primary" ? iconSparklesLight : iconSparklesPurple}
+                src={
+                  color === "primary" ? iconSparklesLight : iconSparklesPurple
+                }
                 alt="Sparkles"
                 width={100}
                 height={100}
@@ -129,8 +133,8 @@ export default function Separator({
           </div>
         ))}
         {words.map((word, index) => (
-          <div key={`2-${index}`} className="flex items-center gap-8">
-            <p className="text-6xl font-black uppercase tracking-tight">
+          <div key={`2-${index}`} className="flex items-center gap-8 shrink-0">
+            <p className="md:text-6xl text-4xl font-black uppercase tracking-tight">
               {word}
             </p>
             {index % 2 === 0 ? (
@@ -143,7 +147,9 @@ export default function Separator({
               />
             ) : (
               <Image
-                src={color === "primary" ? iconSparklesLight : iconSparklesPurple}
+                src={
+                  color === "primary" ? iconSparklesLight : iconSparklesPurple
+                }
                 alt="Sparkles"
                 width={100}
                 height={100}

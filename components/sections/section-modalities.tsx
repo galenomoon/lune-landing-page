@@ -41,8 +41,9 @@ export default function SectionModalities() {
       image: imageKPop,
     },
   ];
+
   return (
-    <section className="w-full h-[85dvh] bg-primary text-white relative grid grid-cols-4 overflow-hidden">
+    <section className="w-full md:h-[85dvh] h-fit bg-primary text-white relative md:grid md:grid-cols-4 overflow-hidden">
       {modalities.map((modality, index) => (
         <button
           onClick={() =>
@@ -51,10 +52,10 @@ export default function SectionModalities() {
             )
           }
           key={modality.title}
-          className={`flex flex-1 flex-col overflow-hidden gap-3 relative w-full group h-full grow hover:text-primary ${modality.color} cursor-pointer hover:bg-secondary transition-all duration-300`}
+          className={`flex flex-1 flex-col overflow-hidden gap-3 relative w-full group h-[60dvh] md:h-full grow hover:text-primary ${modality.color} cursor-pointer hover:bg-secondary transition-all duration-300`}
         >
           <AnimateIn delay={index * 0.2} className="z-20">
-            <h3 className="text-5xl uppercase font-bold tracking-tighter text-center mt-18">
+            <h3 className="text-5xl uppercase font-bold tracking-tighter text-center md:mt-18 mt-10">
               {modality.title}
             </h3>
             <p className="text-xl text-center px-4">{modality.description}</p>
@@ -63,7 +64,7 @@ export default function SectionModalities() {
           <AnimateImage
             src={modality.image}
             alt={`Aulas de ${modality.title} na Lune Escola de Dança - ${modality.description}`}
-            className="scale-150 object-cover pt-[100px] z-10 group-hover:scale-160 transition-all duration-300"
+            className="scale-150 object-cover md:pt-[100px] z-10 group-hover:scale-160 transition-all duration-300"
             width={1000}
             height={1000}
           />

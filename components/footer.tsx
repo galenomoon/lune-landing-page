@@ -7,28 +7,27 @@ import logoHorizontal from "@/assets/logo-horizontal-yellow.svg";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { SOCIAL_MEDIA } from "@/constants/social-media";
 
-const footerLinks = [
-  {
-    title: "Início",
-    href: "#",
-  },
-];
+// const footerLinks = [
+//   {
+//     title: "Início",
+//     href: "#",
+//   },
+// ];
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-neutral">
       <div className="max-w-7xl mx-auto">
-        <div className="py-12 flex flex-col sm:flex-row items-start justify-between gap-x-8 gap-y-10 px-6 xl:px-0">
-          <div>
-            {/* Logo */}
-            <Image
-              src={logoHorizontal}
-              alt="Lune Escola de Dança - Logo horizontal da escola de dança"
-              width={200}
-              height={200}
-            />
+        <div className="py-12 flex flex-col sm:flex-row items-center md:items-start justify-between gap-x-8 gap-y-10 px-6 xl:px-0">
+          {/* Logo */}
+          <Image
+            src={logoHorizontal}
+            alt="Lune Escola de Dança - Logo horizontal da escola de dança"
+            width={200}
+            height={200}
+          />
 
-            {/* <ul className="mt-6 flex items-center gap-4 flex-wrap">
+          {/* <ul className="mt-6 flex items-center gap-4 flex-wrap">
               {footerLinks.map(({ title, href }) => (
                 <li key={title}>
                   <Link href={href} className="text-white">
@@ -37,7 +36,6 @@ const Footer = () => {
                 </li>
               ))}
             </ul> */}
-          </div>
 
           {/* Subscribe Newsletter */}
         </div>

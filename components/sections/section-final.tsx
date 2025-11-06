@@ -11,17 +11,17 @@ import { openWhatsApp } from "@/utils/openWhatsApp";
 
 export default function SectionFinal() {
   return (
-    <section className="w-full min-h-dvh items-center relative flex overflow-hidden">
-      <section className="max-w-7xl mx-auto m-6 w-full min-h-dvh items-center flex relative">
-        <article className="flex flex-col h-fit max-w-2xl gap-3 relative">
+    <section className="w-full md:min-h-dvh min-h-fit items-center relative flex overflow-hidden">
+      <section className="max-w-7xl mx-auto m-6 w-full md:min-h-dvh min-h-fit py-20 items-center flex relative">
+        <article className="flex flex-col h-fit max-w-2xl gap-3 relative md:text-start text-center">
           <AnimateIn delay={0}>
-            <h2 className="text-8xl">
+            <h2 className="text-6xl md:text-8xl">
               AINDA COM <br />
               <span className="font-bold">DÚVIDAS?</span>
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.7}>
-            <p className="text-2xl mb-5">
+            <p className="text-xl md:text-2xl mb-5">
               Nossa equipe está pronta para te ajudar.{" "}
               <span className="font-bold">Fale conosco pelo whatsapp</span> e
               descubra como podemos te ajudar a transformar sua vida através da
@@ -45,7 +45,7 @@ export default function SectionFinal() {
         alt="Lune Escola de Dança - Entre em contato conosco e transforme sua paixão em ritmo"
         width={1000}
         height={1000}
-        className="absolute -right-44 bottom-0 h-auto max-h-[60dvh] md:max-h-[110dvh] object-contain z-0"
+        className="hidden md:block absolute -right-44 bottom-0 h-auto max-h-[60dvh] md:max-h-[110dvh] object- z-0"
       />
     </section>
   );

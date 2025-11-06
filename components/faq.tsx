@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import AnimateIn from "./animate-in";
 
 interface FaqItem {
   id: string;
@@ -71,15 +72,18 @@ const Faq = ({
   return (
     <Accordion type="single" collapsible>
       {items.map((item, index) => (
-        <AccordionItem key={index} value={`item-${index}`}>
-          <AccordionTrigger className="hover:no-underline cursor-pointer">
-            <p className="text-2xl satoshi">
-              <span className="font-bold">0{index + 1}.</span>{" "}
-              {item.question}
-            </p>
-          </AccordionTrigger>
-          <AccordionContent className="text-xl text-white">{item.answer}</AccordionContent>
-        </AccordionItem>
+        <AnimateIn delay={index * 0.3} key={index}>
+          <AccordionItem key={index} value={`item-${index}`}>
+            <AccordionTrigger className="hover:no-underline cursor-pointer">
+              <p className="text-2xl satoshi">
+                <span className="font-bold">0{index + 1}.</span> {item.question}
+              </p>
+            </AccordionTrigger>
+            <AccordionContent className="text-xl text-white">
+              {item.answer}
+            </AccordionContent>
+          </AccordionItem>
+        </AnimateIn>
       ))}
     </Accordion>
   );

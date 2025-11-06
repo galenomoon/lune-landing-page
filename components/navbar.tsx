@@ -137,14 +137,15 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 20 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="fixed md:static bottom-6"
             >
               <Button
                 onClick={() => openWhatsApp()}
-                className="bg-[#50B820] text-white text-[16px] gap-2 px-6 max-w-fit py-2 h-fit w-fit hover:bg-[#45a01c] transition-colors"
+                className="fixed md:static bottom-6 bg-[#50B820] text-white text-[16px] gap-2 px-6 md:max-w-fit py-2 h-fit w-[90dvw] hover:bg-[#45a01c] transition-colors"
               >
                 <FaWhatsapp className="size-5" />
-                <p className="font-bold uppercase hidden sm:inline">
-                  Fale conosco
+                <p className="font-bold uppercase inline">
+                  quero saber mais
                 </p>
               </Button>
             </motion.div>

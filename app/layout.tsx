@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import StructuredData from "@/components/structured-data";
 
 const kenyanCoffee = localFont({
   src: [
@@ -119,6 +120,7 @@ export default function RootLayout({
       <body
         className={`${kenyanCoffee.variable} ${satoshi.variable} antialiased`}
       >
+        <StructuredData />
         {children}
       </body>
     </html>
