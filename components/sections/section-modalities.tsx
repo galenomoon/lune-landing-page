@@ -9,6 +9,7 @@ import imageHipHop from "@/assets/person-hiphop.png";
 import imageJazzFunk from "@/assets/person-contemp.png";
 import imageKPop from "@/assets/person-kpop.png";
 import { openWhatsApp } from "@/utils/openWhatsApp";
+import Image from "next/image";
 
 export default function SectionModalities() {
   const modalities = [
@@ -61,7 +62,7 @@ export default function SectionModalities() {
             <p className="text-xl text-center px-4">{modality.description}</p>
           </AnimateIn>
 
-          <AnimateImage
+          <Image
             src={modality.image}
             alt={`Aulas de ${modality.title} na Lune Escola de Dança - ${modality.description}`}
             className="scale-150 object-cover md:pt-[100px] z-10 group-hover:scale-160 transition-all duration-300"

@@ -72,7 +72,7 @@ const Faq = ({
   return (
     <Accordion type="single" collapsible>
       {items.map((item, index) => (
-        <AnimateIn delay={index * 0.3} key={index}>
+        <AnimateIn delay={index * 0.1} key={index}>
           <AccordionItem key={index} value={`item-${index}`}>
             <AccordionTrigger className="hover:no-underline cursor-pointer">
               <p className="text-2xl satoshi">

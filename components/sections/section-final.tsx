@@ -20,7 +20,7 @@ export default function SectionFinal() {
               <span className="font-bold">DÚVIDAS?</span>
             </h2>
           </AnimateIn>
-          <AnimateIn delay={0.7}>
+          <AnimateIn delay={0.2}>
             <p className="text-xl md:text-2xl mb-5">
               Nossa equipe está pronta para te ajudar.{" "}
               <span className="font-bold">Fale conosco pelo whatsapp</span> e

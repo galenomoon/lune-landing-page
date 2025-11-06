@@ -28,13 +28,11 @@ export default function SectionFeedbacks() {
         <AnimateIn delay={0.6}>
           <FeedbackCarousel />
         </AnimateIn>
-        <AnimateIn delay={0.9}>
-          <section className="flex flex-col gap-4 md:hidden px-6">
-            {feedbacks.map((feedback, index) => (
-              <FeedbackItem key={index} feedback={feedback} />
-            ))}
-          </section>
-        </AnimateIn>
+        <section className="flex flex-col gap-4 md:hidden px-6">
+          {feedbacks.map((feedback, index) => (
+            <FeedbackItem key={index} feedback={feedback} />
+          ))}
+        </section>
       </section>
     </section>
   );
