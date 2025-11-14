@@ -47,11 +47,7 @@ export default function SectionModalities() {
     <section className="w-full md:h-[85dvh] h-fit bg-primary text-white relative md:grid md:grid-cols-4 overflow-hidden">
       {modalities.map((modality, index) => (
         <button
-          onClick={() =>
-            openWhatsApp(
-              `Olá, vim pelo site e gostaria de saber mais sobre as aulas de dança. Estou interessado em ${modality.title}.`
-            )
-          }
+          onClick={() => openWhatsApp(`Olá, vim pelo site e gostaria de saber mais sobre as aulas de dança. Estou interessado em ${modality.title}.`)}
           key={modality.title}
           className={`flex flex-1 flex-col overflow-hidden gap-3 relative w-full group h-[60dvh] md:h-full grow hover:text-primary ${modality.color} cursor-pointer hover:bg-secondary transition-all duration-300`}
         >
