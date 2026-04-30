@@ -16,7 +16,7 @@ export default function SectionLocation() {
         {/* Left — heading + address */}
         <div className="flex flex-col gap-8 flex-shrink-0 md:w-[42%] text-center md:text-start">
           <AnimateIn delay={0}>
-            <h2 className="text-6xl md:text-8xl leading-none uppercase tracking-tighter">
+            <h2 className="text-6xl md:text-8xl leading-none uppercase tracking-tighter text-secondary">
               ONDE<br />
               <span className="font-bold">ESTAMOS</span>
             </h2>
@@ -38,10 +38,8 @@ export default function SectionLocation() {
 
           <AnimateIn delay={0.35}>
             <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="inline-block w-fit mx-auto md:mx-0">
-              <Button
-                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold uppercase text-base px-8 py-5 h-fit tracking-widest rounded-full transition-transform hover:scale-105 cursor-pointer"
-              >
-                Como chegar →
+              <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-[18px] gap-2 px-6 max-w-fit py-2 h-fit w-fit cursor-pointer">
+                <p className="font-bold uppercase">Como chegar</p>
               </Button>
             </a>
           </AnimateIn>
