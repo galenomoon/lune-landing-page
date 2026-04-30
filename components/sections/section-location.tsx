@@ -1,8 +1,6 @@
-import AnimateIn, { AnimateImage } from "../animate-in";
+import AnimateIn from "../animate-in";
 import { Button } from "../ui/button";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
-import logoBallerinaYellow from "@/assets/logo-ballerina-yellow.svg";
 
 const MAPS_EMBED_URL =
   "https://maps.google.com/maps?q=R.+Santa+Maria,+229,+Ponte+São+João,+Jundiaí,+SP,+13218-060,+Brazil&output=embed&hl=pt-BR";
@@ -75,15 +73,6 @@ export default function SectionLocation() {
         </AnimateIn>
       </div>
 
-      {/* Decorative bailarina */}
-      <AnimateImage
-        delay={0.9}
-        src={logoBallerinaYellow}
-        alt=""
-        width={600}
-        height={600}
-        className="hidden md:block absolute -bottom-10 right-0 md:right-[38%] h-auto max-h-[70dvh] object-contain z-0 opacity-10 pointer-events-none"
-      />
     </section>
   );
 }
