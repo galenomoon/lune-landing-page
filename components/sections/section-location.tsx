@@ -59,7 +59,6 @@ export default function SectionLocation() {
                 className="h-[280px] md:h-[440px]"
                 style={{ border: 0, display: "block" }}
                 allowFullScreen
-                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Localização da Lune Escola de Dança"
               />

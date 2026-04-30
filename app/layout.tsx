@@ -125,6 +125,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="preconnect" href="https://maps.google.com" />
+        <link rel="preconnect" href="https://maps.googleapis.com" />
+        <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body
         className={`${kenyanCoffee.variable} ${satoshi.variable} antialiased`}
       >
