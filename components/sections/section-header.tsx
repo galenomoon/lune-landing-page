@@ -2,12 +2,12 @@
 
 //components
 import AnimateIn, { AnimateImage } from "../animate-in";
+import { Button } from "../ui/button";
+import { FaWhatsapp } from "react-icons/fa";
+import { openWhatsApp } from "@/utils/openWhatsApp";
 
 //images
 import logoIcon from "@/assets/logo-icon-purple.svg";
-// import { Button } from "../ui/button";
-// import { FaWhatsapp } from "react-icons/fa";
-// import { openWhatsApp } from "@/utils/openWhatsApp";
 
 export default function SectionHeader() {
   return (
@@ -28,13 +28,13 @@ export default function SectionHeader() {
               <span className="font-bold">estrutura completa</span>
               {` `}e método de ensino comprovado.
             </p>
-            {/* <Button
-              onClick={() => openWhatsApp()}
-              className="bg-[#50B820] text-white md:text-[18px] gap-2 md:px-6! py-2 h-fit w-fit md:w-fit"
+            <Button
+              onClick={() => openWhatsApp("Olá! Vi o site e gostaria de agendar uma aula avulsa.")}
+              className="bg-[#50B820] text-white text-[18px] gap-2 px-6 py-2 h-fit w-fit"
             >
               <FaWhatsapp className="size-5" />
-              <p className="font-bold uppercase">fale conosco pelo whatsapp</p>
-            </Button> */}
+              <p className="font-bold uppercase">Agendar aula avulsa</p>
+            </Button>
           </AnimateIn>
         </article>
       </section>
