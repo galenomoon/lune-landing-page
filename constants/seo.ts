@@ -7,11 +7,19 @@ export const structuredData = {
   url: "https://www.luneescoladedanca.com",
   logo: "https://www.luneescoladedanca.com/logo-horizontal-purple.svg",
   image: "https://www.luneescoladedanca.com/og-image.png",
+  hasMap: "https://maps.app.goo.gl/DzUc6XpBfq7AATscA",
   address: {
     "@type": "PostalAddress",
-    addressCountry: "BR",
+    streetAddress: "R. Santa Maria, 229",
+    addressLocality: "Jundiaí",
     addressRegion: "SP",
-    addressLocality: "São Paulo",
+    postalCode: "13218-060",
+    addressCountry: "BR",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -23.1864,
+    longitude: -46.8964,
   },
   contactPoint: {
     "@type": "ContactPoint",
@@ -84,7 +92,7 @@ export const organizationStructuredData = {
   url: "https://www.luneescoladedanca.com",
   logo: "https://www.luneescoladedanca.com/logo-horizontal-purple.svg",
   description:
-    "Escola de dança especializada em aulas de Ballet, Hip Hop, Jazz-Funk e K-pop para todas as idades.",
+    "Escola de dança especializada em aulas de Ballet, Hip Hop, Jazz-Funk e K-pop para todas as idades em Jundiaí, SP.",
   sameAs: [
     "https://www.instagram.com/lunedanca",
     "https://www.facebook.com/61581629487856",
@@ -95,5 +103,12 @@ export const organizationStructuredData = {
     contactType: "Customer Service",
     availableLanguage: "Portuguese",
   },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "R. Santa Maria, 229",
+    addressLocality: "Jundiaí",
+    addressRegion: "SP",
+    postalCode: "13218-060",
+    addressCountry: "BR",
+  },
 };
-
