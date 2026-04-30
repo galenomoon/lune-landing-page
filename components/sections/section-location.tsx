@@ -1,5 +1,6 @@
 import AnimateIn, { AnimateImage } from "../animate-in";
 import { Button } from "../ui/button";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 import logoBallerinaYellow from "@/assets/logo-ballerina-yellow.svg";
 
@@ -11,7 +12,7 @@ const MAPS_URL = "https://maps.app.goo.gl/DzUc6XpBfq7AATscA";
 export default function SectionLocation() {
   return (
     <section className="w-full min-h-dvh h-fit items-center bg-primary text-primary-foreground relative flex overflow-hidden">
-      <div className="max-w-7xl mx-auto m-6 w-full min-h-dvh py-20 flex flex-col md:flex-row items-center gap-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 xl:px-0 w-full py-20 flex flex-col md:flex-row items-center gap-8 md:gap-12 relative z-10">
 
         {/* Left — heading + address */}
         <div className="flex flex-col gap-8 flex-shrink-0 md:w-[42%] text-center md:text-start">
@@ -39,6 +40,7 @@ export default function SectionLocation() {
           <AnimateIn delay={0.35}>
             <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="inline-block w-fit mx-auto md:mx-0">
               <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-[18px] gap-2 px-6 max-w-fit py-2 h-fit w-fit cursor-pointer">
+                <FaMapMarkerAlt className="size-5" />
                 <p className="font-bold uppercase">Como chegar</p>
               </Button>
             </a>
@@ -56,7 +58,7 @@ export default function SectionLocation() {
               <iframe
                 src={MAPS_EMBED_URL}
                 width="100%"
-                height="440"
+                className="h-[280px] md:h-[440px]"
                 style={{ border: 0, display: "block" }}
                 allowFullScreen
                 loading="lazy"
@@ -65,8 +67,8 @@ export default function SectionLocation() {
               />
             </div>
 
-            {/* Floating badge */}
-            <div className="absolute -top-4 -right-4 bg-secondary text-secondary-foreground font-bold text-sm px-4 py-2 rounded-full shadow-lg uppercase tracking-widest z-10">
+            {/* Floating badge — hidden on mobile to avoid clipping */}
+            <div className="hidden md:flex absolute -top-4 -right-4 bg-secondary text-secondary-foreground font-bold text-sm px-4 py-2 rounded-full shadow-lg uppercase tracking-widest z-10">
               Jundiaí, SP
             </div>
           </div>
