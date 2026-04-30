@@ -4,6 +4,9 @@ import feedbacks from "@/constants/feedback";
 //components
 import AnimateIn from "../animate-in";
 import FeedbackCarousel, { FeedbackItem } from "../feedback-carousel";
+import { Button } from "../ui/button";
+import { FaWhatsapp } from "react-icons/fa";
+import { openWhatsApp } from "@/utils/openWhatsApp";
 
 export default function SectionFeedbacks() {
   return (
@@ -33,6 +36,20 @@ export default function SectionFeedbacks() {
             <FeedbackItem key={index} feedback={feedback} />
           ))}
         </section>
+        <AnimateIn delay={0.8}>
+          <div className="flex flex-col items-center gap-3 text-center">
+            <p className="text-xl md:text-2xl">
+              Pronto para <span className="font-bold">escrever o seu relato</span>?
+            </p>
+            <Button
+              onClick={() => openWhatsApp("Olá! Vi os depoimentos no site e quero agendar uma aula avulsa.")}
+              className="bg-[#50B820] text-white text-[18px] gap-2 px-6 py-2 h-fit w-fit"
+            >
+              <FaWhatsapp className="size-5" />
+              <p className="font-bold uppercase">Quero fazer aula também</p>
+            </Button>
+          </div>
+        </AnimateIn>
       </section>
     </section>
   );
