@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import StructuredData from "@/components/structured-data";
@@ -25,6 +25,12 @@ const satoshi = localFont({
   variable: "--font-satoshi",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.luneescoladedanca.com"),
@@ -103,11 +109,6 @@ export const metadata: Metadata = {
   },
   category: "Education",
   classification: "Escola de Dança",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
   other: {
     "geo.region": "BR-SP",
     "geo.placename": "Jundiaí",
