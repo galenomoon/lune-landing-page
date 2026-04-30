@@ -1,0 +1,126 @@
+<h2>Auditoria — Lune Escola de Dança</h2>
+<p class="subtitle">Selecione os blocos que quer implementar. Múltipla seleção permitida.</p>
+
+<div style="display:flex;flex-direction:column;gap:28px;margin-top:8px">
+
+  <!-- CRÍTICO -->
+  <div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+      <span style="background:#ef4444;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:1px;text-transform:uppercase">🔴 Crítico — maior impacto imediato</span>
+    </div>
+    <div class="options" data-multiselect style="flex-direction:column;gap:10px">
+
+      <div class="option" data-choice="cta-hero" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">1</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">Reabilitar CTA no Hero (section-header)</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">Botão "Fale pelo WhatsApp" estava comentado no código. CTA acima da fold converte 20-30% mais. <strong>Sem custo de implementação.</strong></p>
+        </div>
+      </div>
+
+      <div class="option" data-choice="faq-schema" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">2</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">FAQPage schema (SEO Rich Result)</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">As 8 perguntas do FAQ existem no código mas <strong>não têm schema JSON-LD</strong>. Google pode exibir as perguntas diretamente na SERP — aumenta cliques orgânicos.</p>
+        </div>
+      </div>
+
+      <div class="option" data-choice="prices" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">3</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">Seção de Preços / Planos</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">Visitante não sabe quanto custa. Vai pro WhatsApp só pra perguntar preço — lead frio. <strong>Mostrar preços filtra e qualifica leads antes do contato.</strong></p>
+        </div>
+      </div>
+
+      <div class="option" data-choice="opening-hours" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">4</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">Horários das aulas + openingHours no schema</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">Visitante de Jundiaí quer saber se tem aula às 18h30. Sem horário → abandona. <strong>Google também exibe horários em Maps e Search.</strong></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ALTO -->
+  <div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+      <span style="background:#f97316;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:1px;text-transform:uppercase">🟠 Alto — conversão e confiança</span>
+    </div>
+    <div class="options" data-multiselect style="flex-direction:column;gap:10px">
+
+      <div class="option" data-choice="stars-feedbacks" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">5</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">★★★★★ nos depoimentos + Review schema</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">4 feedbacks reais existem mas sem estrelas visuais nem schema de Review. Google pode exibir <strong>star rating nos resultados de busca</strong> com schema implementado.</p>
+        </div>
+      </div>
+
+      <div class="option" data-choice="cta-feedbacks" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">6</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">CTA após seção de depoimentos</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">Depois de ler relatos reais de alunos, visitante está no <strong>pico de intenção</strong> — mas não há botão neste ponto. Adicionar "Quero fazer aula também!"</p>
+        </div>
+      </div>
+
+      <div class="option" data-choice="sobre-nos" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">7</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">Seção "Sobre a Escola" com professores</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">Pergunta implícita: <em>"Quem vai me ensinar?"</em>. Sem foto e bio dos professores, confiança cai. <strong>Escola local depende de relacionamento.</strong></p>
+        </div>
+      </div>
+
+      <div class="option" data-choice="heading-hierarchy" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">8</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">Corrigir hierarquia de headings (SEO técnico)</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">Seção de modalidades usa &lt;h3&gt; sem &lt;h2&gt; pai — quebra hierarquia semântica. Google usa hierarquia para entender estrutura de conteúdo.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MÉDIO -->
+  <div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+      <span style="background:#eab308;color:#1a1a1a;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:1px;text-transform:uppercase">🟡 Médio — crescimento a longo prazo</span>
+    </div>
+    <div class="options" data-multiselect style="flex-direction:column;gap:10px">
+
+      <div class="option" data-choice="aula-gratis" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">9</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">CTA "Agendar aula gratuita experimental"</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">Niche específico: quem tem medo de começar precisa de <strong>risco zero</strong>. "1ª aula grátis" é o maior conversor em academias e escolas de dança. FAQ menciona mas sem CTA dedicado.</p>
+        </div>
+      </div>
+
+      <div class="option" data-choice="publico-infantil" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">10</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">Conteúdo específico para crianças / pais</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">Em escolas de dança, <strong>60-70% das matrículas são de crianças</strong> trazidas pelos pais. Site atual é genérico. Seção dedicada com benefícios para crianças converte esse público.</p>
+        </div>
+      </div>
+
+      <div class="option" data-choice="og-image" onclick="toggleSelect(this)" style="padding:14px 18px">
+        <div class="letter">11</div>
+        <div class="content">
+          <h3 style="font-size:15px;margin:0 0 2px">Criar OG Image (og-image.png)</h3>
+          <p style="font-size:13px;margin:0;opacity:0.8">Arquivo <code>/public/og-image.png</code> referenciado nos meta tags mas <strong>não existe</strong>. Sem ele, WhatsApp e Instagram não exibem preview ao compartilhar o link.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top:20px">Selecione o que quer implementar e me diz no terminal. Múltipla seleção permitida.</p>
