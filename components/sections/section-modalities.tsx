@@ -52,9 +52,9 @@ export default function SectionModalities() {
           className={`flex flex-1 flex-col overflow-hidden gap-3 relative w-full group h-[60dvh] md:h-full grow hover:text-primary ${modality.color} cursor-pointer hover:bg-secondary transition-all duration-300`}
         >
           <AnimateIn delay={index * 0.2} className="z-20">
-            <h3 className="text-5xl uppercase font-bold tracking-tighter text-center md:mt-18 mt-10">
+            <h2 className="text-5xl uppercase font-bold tracking-tighter text-center md:mt-18 mt-10">
               {modality.title}
-            </h3>
+            </h2>
             <p className="text-xl text-center px-4">{modality.description}</p>
           </AnimateIn>
 
