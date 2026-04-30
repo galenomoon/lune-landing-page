@@ -51,11 +51,16 @@ export function FeedbackItem({
             height={48}
             className="rounded-full object-cover size-12 aspect-square"
           />
-          <article className="flex flex-col">
+          <article className="flex flex-col gap-0.5">
             <p className="text-lg font-semibold leading-5">{feedback.name}</p>
             <p className="text-sm text-gray-500 italic font-medium">
               Aluna de {feedback.modalidade}
             </p>
+            <div className="flex gap-0.5 mt-0.5" aria-label="Avaliação 5 de 5 estrelas">
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className="text-yellow-400 text-sm">★</span>
+              ))}
+            </div>
           </article>
         </div>
         <p className="md:text-lg text-base opacity-60">&quot;{feedback.feedback}&quot;</p>
