@@ -7,6 +7,7 @@ import Separator from "@/components/separator";
 import SectionModalities from "@/components/sections/section-modalities";
 import SectionFAQ from "@/components/sections/section-faq";
 import SectionFinal from "@/components/sections/section-final";
+import SectionLocation from "@/components/sections/section-location";
 
 export default function Home() {
   const words = ["vem dançar com a gente", "vem dançar com a gente"];
@@ -27,6 +28,10 @@ export default function Home() {
         <Separator color="secondary" words={words}/>
         <section id="section-faq" aria-label="Perguntas frequentes">
           <SectionFAQ />
+        </section>
+        <Separator color="secondary" words={words}/>
+        <section id="section-location" aria-label="Localização da escola">
+          <SectionLocation />
         </section>
         <Separator color="primary" words={words}/>
         <section id="section-final" aria-label="Entre em contato">
